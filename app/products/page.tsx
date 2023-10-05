@@ -35,7 +35,10 @@ const productList = products.map((product) => {
 const ProductsPage = () => {
   return (
     <>
-      <HeroSection title="Products" backgroundImage="/drone.svg"></HeroSection>
+      <HeroSection
+        title="Products"
+        backgroundImage="/museum-airplane.svg"
+      ></HeroSection>
       <div className="container mx-auto mt-5 px-4 sm:px-6 md:px-8">
         <div className="flex">
           <div className="p-2">
