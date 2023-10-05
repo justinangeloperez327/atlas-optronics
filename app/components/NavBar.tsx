@@ -7,11 +7,11 @@ import { usePathname } from "next/navigation";
 import { useState, useEffect, Fragment } from "react";
 
 const navigation = [
-  { name: "who we are", href: "who-we-are" },
-  { name: "what we do", href: "what-we-do" },
-  { name: "products", href: "products" },
-  { name: "services", href: "services" },
-  { name: "contact us", href: "contact" },
+  { name: "who we are", href: "/who-we-are" },
+  { name: "what we do", href: "/what-we-do" },
+  { name: "products", href: "/products" },
+  { name: "services", href: "/services" },
+  { name: "contact us", href: "/contact" },
 ];
 
 const Navbar = () => {
@@ -21,29 +21,28 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Check the scroll position and set the background color accordingly
       if (window.scrollY > 0) {
-        setNavbarBackground("white"); // Change to your desired background color
+        setNavbarBackground("white");
       } else {
         setNavbarBackground("transparent");
       }
     };
 
-    // Attach the scroll event listener
     window.addEventListener("scroll", handleScroll);
 
-    // Clean up the event listener when the component unmounts
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50" style={{ backgroundColor: navbarBackground }}>
+    <header
+      className="fixed inset-x-0 top-0 z-50"
+      style={{ backgroundColor: navbarBackground }}
+    >
       <nav
-        className="flex items-center justify-between p-6 lg:px-8"
+        className="flex items-center justify-between p-6 lg:px-8 bg-white/[.5]"
         aria-label="Global"
-        style={{ backgroundColor: "rgba(255, 255, 255, 0.32)" }}
       >
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
@@ -55,7 +54,6 @@ const Navbar = () => {
               width={400}
               height={400}
             />
-            
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -73,7 +71,7 @@ const Navbar = () => {
             <a
               key={item.name}
               href={item.href}
-              className="text-lg font-bold leading-6 text-gray-900 uppercase p-3 rounded-lg hover:bg-slate-200"
+              className="text-lg font-extrabold leading-6 text-gray-900 uppercase p-3 rounded-lg hover:underline"
             >
               {item.name}
             </a>
@@ -123,7 +121,7 @@ const Navbar = () => {
                       <a
                         key={item.name}
                         href={item.href}
-                        className="-mx-3 block rounded-lg px-3 py-2 text-lg font-bold leading-7 text-gray-900 hover:bg-slate-200 uppercase"
+                        className="-mx-3 block rounded-lg px-3 py-2 text-lg font-extrabold leading-7 text-gray-900 uppercase"
                       >
                         {item.name}
                       </a>

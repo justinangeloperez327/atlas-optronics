@@ -11,25 +11,28 @@ export const metadata: Metadata = {
 const HomePage = () => {
   return (
     <>
-      <HeroSection title="Atlas Optronics" backgroundImage="/three-plane.svg"></HeroSection>
+      <HeroSection
+        title="Atlas Optronics"
+        backgroundImage="/plexus.jpg"
+      ></HeroSection>
       <div className="container py-8 mx-auto h-screen">
-      <section className="py-16 bg-gray-100">
-        <div className="container mx-auto">
-          <h2 className="mb-8 text-3xl font-semibold text-center">
-            Our Key Services
-          </h2>
-          {/* Add content for key services here */}
-        </div>
-      </section>
+        <section className="py-16 bg-gray-100">
+          <div className="container mx-auto">
+            <h2 className="mb-8 text-3xl font-semibold text-center">
+              Our Key Services
+            </h2>
+            {/* Add content for key services here */}
+          </div>
+        </section>
 
-      <section className="py-16">
-        <div className="container mx-auto">
-          <h2 className="mb-8 text-3xl font-semibold text-center">
-            Latest Blog Posts
-          </h2>
-          {/* Add content for latest blog posts here */}
-        </div>
-      </section>
+        <section className="py-16">
+          <div className="container mx-auto">
+            <h2 className="mb-8 text-3xl font-semibold text-center">
+              Latest Blog Posts
+            </h2>
+            {/* Add content for latest blog posts here */}
+          </div>
+        </section>
       </div>
     </>
   );

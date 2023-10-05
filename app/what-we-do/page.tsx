@@ -4,7 +4,10 @@ import HeroSection from "@/app/components/HeroSection";
 const WhatWeDo = () => {
   return (
     <>
-      <HeroSection title="What We Do" backgroundImage="/helicopter-2.svg"></HeroSection>
+      <HeroSection
+        title="What we do"
+        backgroundImage="/helicopter.svg"
+      ></HeroSection>
       <div className="container justify-center h-screen mx-auto"></div>
     </>
   );

@@ -13,7 +13,7 @@ const productList = products.map((product) => {
   return (
     <li
       key={product.id}
-      className="flex flex-col p-4 mb-6 bg-white rounded-lg drop-shadow-lg md:flex-row"
+      className="flex flex-col p-4 mb-6 bg-white drop-shadow-lg md:flex-row"
     >
       <div className="p-2 mb-4 md:w-1/3 md:mb-0">
         <Image
@@ -35,7 +35,14 @@ const productList = products.map((product) => {
 const ProductsPage = () => {
   return (
     <>
-      <HeroSection title="Products" description={description} backgroundImage="/drone.svg"></HeroSection>
+      <HeroSection title="Products" backgroundImage="/drone.svg"></HeroSection>
+      <div className="container mx-auto mt-5 px-4 sm:px-6 md:px-8">
+        <div className="flex">
+          <div className="p-2">
+            <p className="text-lg leading-8">{description}</p>
+          </div>
+        </div>
+      </div>
       <div className="container justify-center mx-auto mt-10 mb-20">
         <ul>{productList}</ul>
       </div>

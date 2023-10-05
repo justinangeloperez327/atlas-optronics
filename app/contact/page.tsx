@@ -12,7 +12,10 @@ export const metadata: Metadata = {
 const ContactPage = () => {
   return (
     <>
-      <HeroSection title="Contact Us" backgroundImage="/telephone.svg"></HeroSection>
+      <HeroSection
+        title="Contact us"
+        backgroundImage="/telephone.svg"
+      ></HeroSection>
       <div className="container justify-center mb-20 mx-auto">
         <div className="py-3 px-5 box-content border items-center bg-white rounded-lg drop-shadow-lg">
           <Input label="Name" name="name" placeholder="Name"></Input>
