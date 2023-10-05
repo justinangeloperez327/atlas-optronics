@@ -2,26 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.dot-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  
+  .dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #007bff;
+    border-radius: 50%;
+    animation: moveDot 5s linear infinite, blinkDot 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes moveDot {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(100px, 100px);
+    }
+  }
+  
+  @keyframes blinkDot {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  /* CSS for Lines Animation */
+  .lines {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .line {
+    stroke: #007bff;
+    stroke-width: 2;
+    animation: drawLine 5s linear infinite, blinkLine 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes drawLine {
+    0% {
+      stroke-dasharray: 0;
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dasharray: 100;
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes blinkLine {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
