@@ -1,5 +1,4 @@
 "use client";
-
 import { Dialog, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
@@ -38,22 +37,34 @@ const Navbar = () => {
   return (
     <header
       className="fixed inset-x-0 top-0 z-50"
-      style={{ backgroundColor: navbarBackground }}
+      style={{
+        backgroundColor: navbarBackground,
+        opacity: navbarBackground === "transparent" ? 1 : 0.8,
+      }}
     >
       <nav
-        className="flex items-center justify-between p-6 lg:px-8 bg-white/[.5]"
+        className="flex items-center justify-between p-6 lg:px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
-            <Image
+            <span className="sr-only">Atlas Optronics</span>
+            <h1
+              className={`text-xl font-black tracking-wide ${
+                navbarBackground === "transparent"
+                  ? "text-gray-100"
+                  : "text-gray-700"
+              } sm:text-3xl`}
+            >
+              ATLAS OPTRONICS
+            </h1>
+            {/* <Image
               className="h-8 w-auto"
               src="/next.svg"
               alt=""
               width={400}
               height={400}
-            />
+            /> */}
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -71,7 +82,11 @@ const Navbar = () => {
             <a
               key={item.name}
               href={item.href}
-              className="text-lg font-extrabold leading-6 text-gray-900 uppercase p-3 rounded-lg hover:underline"
+              className={`text-lg font-extrabold leading-6 ${
+                navbarBackground === "transparent"
+                  ? "text-gray-100"
+                  : "text-gray-700"
+              } uppercase`}
             >
               {item.name}
             </a>

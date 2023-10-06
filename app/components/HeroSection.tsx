@@ -8,13 +8,14 @@ interface Props {
 const HeroSection = ({ title, backgroundImage }: Props) => {
   return (
     <div
-      className="relative px-24 lg:py-64 bg-cover bg-center"
+      className="relative px-24 lg:py-40 bg-cover bg-center"
       style={{
         backgroundImage: `url(${backgroundImage})`,
-        paddingTop: "32rem",
+        paddingTop: "28rem",
+        paddingBottom: "28rem",
       }}
     >
-      <div className="absolute inset-x-0 bottom-0 mx-auto max-w-2xl text-center pb-12">
+      <div className="relative mx-auto max-w-2xl text-center ">
         <h1 className="text-4xl font-black tracking-tight text-white sm:text-6xl">
           {title}
         </h1>

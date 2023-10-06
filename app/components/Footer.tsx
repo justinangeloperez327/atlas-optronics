@@ -5,8 +5,6 @@ const Footer = () => {
     <footer className="mt-auto bg-gray-900 text-white">
       <div className="container mx-auto py-8 px-4 lg:px-8">
         <div className="flex w-full justify-center">
-          {" "}
-          {/* Center the links */}
           <ul className="flex space-x-4">
             <li>
               <a
