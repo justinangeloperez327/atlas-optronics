@@ -1,5 +1,7 @@
 import React from "react";
 import HeroSection from "@/app/components/HeroSection";
+import Content from "@/app/components/Content";
+import Title from "@/app/components/TitleSection";
 
 const links = [
   { title: "About Us", href: "who-we-are/about-us", description: "" },
@@ -23,15 +25,10 @@ const linksList = links.map((link) => {
 const WhoWeArePage = () => {
   return (
     <>
-      <HeroSection
-        title="Who we are"
-        backgroundImage="/three-plane.svg"
-      ></HeroSection>
-      <div className="container mx-auto mt-5 px-4 sm:px-6 md:px-8">
-        <div className="flex">
-          <div className="p-2">
-            <h1 className="mb-4 text-3xl font-bold">Atlas Optronics</h1>
-            <p className="text-lg leading-8">
+      
+      <Content>
+        <Title title="Who we are" />
+            <p className="text-lg leading-8 mt-4">
               HENSOLDT’s main areas of activity include intelligence and
               reconnaissance sensors, solutions for controlling the
               electromagnetic spectrum and mission avionics systems. Our broadly
@@ -42,10 +39,8 @@ const WhoWeArePage = () => {
               unmanned aerial vehicles, ships and submarines, armoured vehicles
               and satellites.
             </p>
-          </div>
-        </div>
         <div className="my-6 mx-auto">{linksList}</div>
-      </div>
+      </Content>
     </>
   );
 };

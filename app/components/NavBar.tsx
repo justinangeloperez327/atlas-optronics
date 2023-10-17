@@ -16,14 +16,16 @@ const navigation = [
 const Navbar = () => {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [navbarBackground, setNavbarBackground] = useState("transparent");
-
+  const [navbarBackground, setNavbarBackground] = useState("white");
+  
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
+      if (window.scrollY) {
         setNavbarBackground("white");
       } else {
-        setNavbarBackground("transparent");
+        if (pathname === '/') {
+          setNavbarBackground("transparent");
+        }
       }
     };
 
@@ -32,7 +34,7 @@ const Navbar = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  });
 
   return (
     <header
@@ -43,7 +45,7 @@ const Navbar = () => {
       }}
     >
       <nav
-        className="flex items-center justify-between p-6 lg:px-8"
+        className="w-full m-auto flex items-center justify-between p-12 lg:px-6 lg:gap-20 lg:py-6 lg:max-w-[1280px] lg:px-6"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
@@ -70,7 +72,7 @@ const Navbar = () => {
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-500"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
@@ -112,13 +114,21 @@ const Navbar = () => {
               <div className="flex items-center justify-between">
                 <a href="/" className="-m-1.5 p-1.5">
                   <span className="sr-only">Atlas Optronics</span>
-                  <Image
+                  {/* <Image
                     className="h-8 w-auto"
                     src="/next.svg"
                     alt=""
                     width={400}
                     height={400}
-                  />
+                  /> */}
+                  <a href="/" className="-m-1.5 p-1.5">
+                  <span className="sr-only">Atlas Optronics</span>
+                  <h1
+                    className={`text-xl font-black tracking-wide text-gray-700 sm:text-3xl`}
+                  >
+                    ATLAS OPTRONICS
+                  </h1>
+                </a>
                 </a>
                 <button
                   type="button"

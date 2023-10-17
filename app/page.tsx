@@ -1,5 +1,6 @@
 import React from "react";
-import HeroSection from "@/app/components/HeroSection";
+import HeroSection from "@/app/components/HeroSection"
+import Content from "@/app/components/Content"
 
 import type { Metadata } from "next";
 
@@ -11,11 +12,8 @@ export const metadata: Metadata = {
 const HomePage = () => {
   return (
     <>
-      <HeroSection
-        title="Atlas Optronics"
-        backgroundImage="/plexus.jpg"
-      ></HeroSection>
-      <div className="container py-8 mx-auto h-screen">
+      <HeroSection />
+      <Content>
         <section className="py-16 bg-gray-100">
           <div className="container mx-auto">
             <h2 className="mb-8 text-3xl font-semibold text-center">
@@ -33,7 +31,7 @@ const HomePage = () => {
             {/* Add content for latest blog posts here */}
           </div>
         </section>
-      </div>
+      </Content>
     </>
   );
 };

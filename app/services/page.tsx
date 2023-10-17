@@ -35,7 +35,6 @@ const ServicesList = services.map((service) => {
 const ServicesPage = () => {
   return (
     <>
-      <HeroSection title="Services" backgroundImage="/space.svg"></HeroSection>
       <div className="container justify-center h-screen mx-auto">
         <ul>{ServicesList}</ul>
       </div>
