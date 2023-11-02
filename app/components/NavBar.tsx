@@ -147,7 +147,7 @@ const Navbar = () => {
 										<a
 											key={item.name}
 											href={item.href}
-											className="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50"
+											className="px-3 py-2 rounded-md text-lg font-extrabold text-gray-600 hover:text-gray-800 hover:bg-gray-50"
 										>
 											{item.name}
 										</a>
@@ -174,16 +174,15 @@ const Navbar = () => {
 							>
 								<Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 lg:max-w-sm sm:ring-1 sm:ring-gray-900/10">
 									<div className="flex items-center justify-between">
-										<a href="/" className="-m-1.5 p-1.5">
-											<span className="sr-only">Atlas Optronics</span>
-											<a href="/" className="-m-1.5 p-1.5">
-												<span className="sr-only">Atlas Optronics</span>
-												<h1
-													className={`text-xl font-black tracking-wide text-gray-700 sm:text-3xl`}
-												>
-													ATLAS OPTRONICS
-												</h1>
-											</a>
+										<a href="/" className="block">
+											<Image
+												src="/atlas-optronics-logo.png"
+												alt="Atlas Optronics"
+												width={140}
+												height={48}
+												objectFit="contain"
+												priority
+											/>
 										</a>
 										<button
 											type="button"
@@ -201,7 +200,7 @@ const Navbar = () => {
 													<a
 														key={item.name}
 														href={item.href}
-														className="-mx-3 block rounded-lg px-3 py-2 text-lg font-extrabold leading-7 text-gray-900 uppercase"
+														className="mx-3 block rounded-lg px-3 py-2 text-lg font-extrabold leading-7 text-gray-900 uppercase"
 													>
 														{item.name}
 													</a>
