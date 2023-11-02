@@ -22,9 +22,10 @@ const WhoWeArePage = () => {
 					<p className="text-lg leading-8">
 						At{" "}
 						<span className="font-semibold text-gray-900">
+							{" "}
 							Atlas Optronics JV
 						</span>
-						, we're more than just a company; we're your definitive ally in the
+						, we`re more than just a company; we`re your definitive ally in the
 						realm of advanced sensor solutions. Our presence spans land, sea,
 						and air — fortified by a robust foundation in the UAE and the
 						formidable Atlas Group. Innovation is our compass, driving us to
@@ -40,7 +41,7 @@ const WhoWeArePage = () => {
 								Company History
 							</h3>
 							<p className="text-lg">
-								As a vanguard of the{" "}
+								As a vanguard of the
 								<a
 									href="https://atlasgroup.ae/"
 									className="text-blue-600 hover:underline"

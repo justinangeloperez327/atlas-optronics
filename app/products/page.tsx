@@ -2,7 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import { description } from "@/constants/products";
 import HeroSection from "@/app/components/HeroSection";
-import ProductList from "./product-list";
+import ProductList from "@/app/components/ProductList";
 import Content from "@/app/components/Content";
 import Title from "@/app/components/TitleSection";
 

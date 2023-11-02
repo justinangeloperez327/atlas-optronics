@@ -36,7 +36,7 @@ const WhatWeDo = () => {
 				<section className="my-8">
 					<h2 className="text-3xl font-bold text-center mb-6">Our Values</h2>
 					<ul className="list-disc pl-5">
-						<li>Innovation - pushing the boundaries of what's possible</li>
+						<li>Innovation - pushing the boundaries of what`s possible</li>
 						<li>Integrity - maintaining honesty and transparency</li>
 						<li>Quality - delivering excellence in every product</li>
 						<li>Customer Focus - ensuring client satisfaction above all</li>

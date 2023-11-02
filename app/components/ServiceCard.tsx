@@ -1,7 +1,11 @@
 import React from "react";
 import Image from "next/image";
 
-const ServiceCard = ({ service }) => {
+interface Props {
+	service: any;
+}
+
+const ServiceCard = ({ service }: Props) => {
 	return (
 		<div className="flex flex-col items-center bg-white rounded-lg shadow-md overflow-hidden">
 			{service.image && (

@@ -19,10 +19,6 @@ export default function RootLayout({
 }) {
 	return (
 		<>
-			<Head>
-				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				<title>{metadata.title}</title>
-			</Head>
 			<body className={`${inter.className} flex flex-col min-h-screen`}>
 				<Navbar />
 				<main className="flex-grow">{children}</main>
