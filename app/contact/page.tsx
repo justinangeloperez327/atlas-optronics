@@ -1,42 +1,57 @@
 import React from "react";
-import type { Metadata } from "next";
 import Input from "../components/Input";
 import TextArea from "../components/TextArea";
-import HeroSection from "@/app/components/HeroSection";
 
-export const metadata: Metadata = {
-  title: "Atlas Optronics Contact Page",
-  description: "Atlas Optronics Contact Page",
+export const metadata = {
+	title: "Atlas Optronics Contact Page",
+	description: "Atlas Optronics Contact Page",
 };
 
 const ContactPage = () => {
-  return (
-    <>
-      <div className="container justify-center mb-20 mx-auto">
-        <div className="py-3 px-5 box-content border items-center bg-white rounded-lg drop-shadow-lg">
-          <Input label="Name" name="name" placeholder="Name"></Input>
-          <Input label="Email" name="email" placeholder="Email Address"></Input>
-          <Input
-            label="Phone Number"
-            name="phone_number"
-            placeholder="Phone Number"
-          ></Input>
-          <Input label="Company" name="company" placeholder="Company"></Input>
-          <TextArea
-            label="Message"
-            name="message"
-            placeholder="Message"
-          ></TextArea>
-          <button
-            type="submit"
-            className="px-4 py-2 mt-5 text-white bg-blue-950 rounded-md hover:bg-gray-800"
-          >
-            Send Message
-          </button>
-        </div>
-      </div>
-    </>
-  );
+	return (
+		<div className="flex justify-center pt-32 sm:pt-16 md:pt-32 lg:pt-40 xl:pt-64 pb-12 px-4 sm:px-6 lg:px-8">
+			<div className="max-w-md w-full space-y-8">
+				<div>
+					<h1 className="text-center text-3xl font-extrabold text-gray-900">
+						Contact Us
+					</h1>
+					<p className="mt-2 text-center text-sm text-gray-600">
+						You have questions? Send us a message!
+					</p>
+				</div>
+				<form className="mt-8 space-y-6">
+					<Input label="Name" name="name" type="text" placeholder="Your Name" />
+					<Input
+						label="Email"
+						name="email"
+						type="email"
+						placeholder="Your Email Address"
+					/>
+					<Input
+						label="Phone Number"
+						name="phone_number"
+						type="tel"
+						placeholder="Your Phone Number"
+					/>
+					<Input
+						label="Company"
+						name="company"
+						type="text"
+						placeholder="Your Company"
+					/>
+					<TextArea label="Message" name="message" placeholder="Your Message" />
+					<div>
+						<button
+							type="submit"
+							className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+						>
+							Send Message
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	);
 };
 
 export default ContactPage;
