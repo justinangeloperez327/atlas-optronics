@@ -132,13 +132,6 @@ const Navbar = () => {
 									<div className="flex items-center justify-between">
 										<a href="/" className="-m-1.5 p-1.5">
 											<span className="sr-only">Atlas Optronics</span>
-											{/* <Image
-                    className="h-8 w-auto"
-                    src="/next.svg"
-                    alt=""
-                    width={400}
-                    height={400}
-                  /> */}
 											<a href="/" className="-m-1.5 p-1.5">
 												<span className="sr-only">Atlas Optronics</span>
 												<h1
@@ -183,4 +176,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-``;
