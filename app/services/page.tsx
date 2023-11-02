@@ -5,7 +5,7 @@ import { services, description } from "@/constants/services";
 import HeroSection from "@/app/components/HeroSection";
 
 export const metadata: Metadata = {
-	title: "Atlas Optronics Services Page",
+	title: "Services",
 	description:
 		"Explore our range of services designed to meet your security needs.",
 };

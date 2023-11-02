@@ -3,6 +3,11 @@ import HeroSection from "@/app/components/HeroSection";
 import ServiceCard from "@/app/components/ServiceCard"; // Assuming you have this component
 import { services } from "@/constants/services"; // Your services data
 
+export const metadata = {
+	title: "What We Do",
+	description: "Providing cutting-edge solutions in the realm of Optronics.",
+};
+
 const WhatWeDo = () => {
 	return (
 		<>

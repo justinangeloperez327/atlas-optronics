@@ -3,6 +3,11 @@ import Content from "@/app/components/Content";
 import TitleSection from "@/app/components/TitleSection"; // Assuming you have a TitleSection component
 import HeroSection from "../components/HeroSection";
 
+export const metadata = {
+	title: "Who We Are",
+	description: "Providing cutting-edge solutions in the realm of Optronics.",
+};
+
 const WhoWeArePage = () => {
 	return (
 		<>
