@@ -9,7 +9,7 @@ const ProductsSection = () => {
 			<div className="container mx-auto p-6 mb-5 relative z-10">
 				<div className="mb-2 md:mb-10 ml-2 lg:ml-32">
 					<h1 className="text-4xl lg:text-6xl mb-2 md:mb-10">Services</h1>
-					<p className="text-sm pr-2 md:pr-32 lg:pr-40 xl:pr-96">{subtitle}</p>
+					<p className="text-xl pr-2 md:pr-32 lg:pr-40 xl:pr-96">{subtitle}</p>
 				</div>
 				<div className="grid grid-cols-1 sm:grid-cols-2 gap-3 my-5 mx-2 md:mx-4 lg:mx-40 xl:mx-72">
 					{services.map((item, index) => (
