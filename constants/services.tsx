@@ -12,24 +12,28 @@ export const services = [
 		id: 1,
 		name: "Product & System Support",
 		subtitle: 'Support over their entire lifecycle',
+		description: '',
 		image: "/home-services/product-support.jpg",
 	},
 	{
 		id: 2,
 		name: "Simulation Solutions",
 		subtitle: 'A constantly expanding portfolio',
+		description: '',
 		image: "/home-services/simulation.jpg",
 	},
 	{
 		id: 3,
 		name: "Training Courses",
 		subtitle: 'Reliable partner for new skills',
+		description: '',
 		image: "/home-services/training.jpg",
 	},
 	{
 		id: 4,
 		name: "Special Services",
 		subtitle: 'Beyond products and systems',
+		description: '',
 		image: "/home-services/special-services.jpg",
 	},
 ];
