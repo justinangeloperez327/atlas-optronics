@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { services, subtitle } from "@/constants/services";
+import GridContainer from "./GridContainer";
 
 const ProductsSection = () => {
 	return (
@@ -31,7 +32,7 @@ const ProductsSection = () => {
 					))}
 				</div>
 			</div>
-			<div className="absolute top-0 left-0 w-full lg:w-4/5 xl:w-2/3 h-full bg-gray-100 z-0"></div>
+			<GridContainer></GridContainer>
 		</div>
 	);
 };

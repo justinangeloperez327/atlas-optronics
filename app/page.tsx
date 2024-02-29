@@ -4,6 +4,7 @@ import ProductsSection from "@/app/components/ProductsSection";
 import ServicesSection from "@/app/components/ServicesSection";
 import SolutionsSection from "./components/SolutionsSection";
 import ImageCarousel from "./components/ImageCarousel";
+import InsightsSection from "./components/InsightsSection";
 
 export const metadata = {
 	title: "Atlas Optronics",
@@ -33,10 +34,10 @@ const HomePage = () => {
 				<SolutionsSection />
 			</div>
 			<div className="relative mb-20">
-				<ProductsSection />
+				<InsightsSection />
 			</div>
-			<div className="relative">
-				<ImageCarousel />
+			<div className="relative mb-20">
+				<ProductsSection />
 			</div>
 			<div className="relative mt-20">
 				<ServicesSection />

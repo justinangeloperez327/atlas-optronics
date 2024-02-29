@@ -23,7 +23,7 @@ export default function RootLayout({
 		<>
 			<html lang="en">
 				<head></head>
-				<body className={`${inter.className} `}>
+				<body className={`bg-sky-600 text-white ${inter.className} `}>
 					<Navbar />
 					<div className="relative">
 						<main>{children}</main>
