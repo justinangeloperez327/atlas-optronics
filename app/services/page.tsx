@@ -5,9 +5,10 @@ import { services, description } from "@/constants/services";
 import HeroSection from "@/app/components/HeroSection";
 import Content from "@/app/components/Content";
 import ServiceCard from "@/app/components/ServiceCard";
+import HeroTitle from "../components/HeroTitle";
 
-export const metadata: Metadata = {
-	title: "Services",
+export const metadata = {
+	title: 'Services',
 	description:
 		"Explore our range of services designed to meet your security needs.",
 };
@@ -15,12 +16,10 @@ export const metadata: Metadata = {
 const ServicesPage = () => {
 	return (
 		<>
-			<HeroSection imageSrc="/solutions.png">
+			<HeroSection imageSrc="/home.jpg">
 				<div className="text-center">
-					<h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-						Our Services
-					</h1>
-					<p className="mt-6 text-lg leading-8 text-gray-600">
+					<HeroTitle title={metadata.title} />
+					<p className="mt-4 text-lg leading-8 text-slate-300 mb-4">
 						{metadata.description}
 					</p>
 				</div>

@@ -2,13 +2,13 @@ import Link from "next/link";
 import HeroSection from "@/app/components/HeroSection";
 import ProductsSection from "@/app/components/ProductsSection";
 import ServicesSection from "@/app/components/ServicesSection";
-import SolutionsSection from "./components/SolutionsSection";
-import ImageCarousel from "./components/ImageCarousel";
-import InsightsSection from "./components/InsightsSection";
+import SolutionsSection from "@/app/components/SolutionsSection";
+import InsightsSection from "@/app/components/InsightsSection";
+import HeroTitle from "@/app/components/HeroTitle";
 
 export const metadata = {
-	title: "Atlas Optronics",
-	description: "Atlas Optronics",
+	title: "Welcome to Atlas Optronics",
+	description: "Where Vision Meet Security.",
 };
 
 const HomePage = () => {
@@ -16,11 +16,9 @@ const HomePage = () => {
 		<>
 			<HeroSection imageSrc="/home.jpg">
 				<div className="text-center">
-					<h1 className="text-2xl sm:text-4xl font-bold tracking-tight text-slate-300 ">
-						Welcome to Atlas Optronics
-					</h1>
+					<HeroTitle title={metadata.title} />
 					<p className="mt-4 text-lg leading-8 text-slate-300 mb-4">
-						Where Vision Meet Security.
+						{metadata.description}
 					</p>
 					<Link
 						href="/who-we-are"
@@ -39,7 +37,7 @@ const HomePage = () => {
 			<div className="relative mb-20">
 				<ProductsSection />
 			</div>
-			<div className="relative mt-20">
+			<div className="relative mt-28">
 				<ServicesSection />
 			</div>
 		</>

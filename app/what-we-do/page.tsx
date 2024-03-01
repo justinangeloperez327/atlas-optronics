@@ -3,6 +3,7 @@ import HeroSection from "@/app/components/HeroSection";
 import ServiceCard from "@/app/components/ServiceCard"; // Assuming you have this component
 import { services } from "@/constants/services"; // Your services data
 import Content from "@/app/components/Content";
+import HeroTitle from "../components/HeroTitle";
 
 export const metadata = {
 	title: "What We Do",
@@ -12,13 +13,11 @@ export const metadata = {
 const WhatWeDo = () => {
 	return (
 		<>
-			<HeroSection imageSrc="/what-we-do.png">
+			<HeroSection imageSrc="/home.jpg">
 				<div className="text-center">
-					<h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-						What We Do
-					</h1>
-					<p className="mt-6 text-lg leading-8 text-gray-600">
-						Providing cutting-edge solutions in the realm of Optronics.
+					<HeroTitle title={metadata.title} />
+					<p className="mt-4 text-lg leading-8 text-slate-300 mb-4">
+						{metadata.description}
 					</p>
 				</div>
 			</HeroSection>

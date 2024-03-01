@@ -1,13 +1,13 @@
 import React from "react";
-import type { Metadata } from "next";
 import { description } from "@/constants/products";
 import HeroSection from "@/app/components/HeroSection";
 import ProductList from "@/app/components/ProductList";
 import Content from "@/app/components/Content";
 import Title from "@/app/components/TitleSection";
+import HeroTitle from "../components/HeroTitle";
 
-export const metadata: Metadata = {
-	title: "Explore Our Products | Atlas Optronics",
+export const metadata = {
+	title: "Products",
 	description:
 		"Discover cutting-edge security solutions with Atlas Optronics. Browse our range of products tailored to your safety needs.",
 };
@@ -15,12 +15,10 @@ export const metadata: Metadata = {
 const ProductsPage = () => {
 	return (
 		<>
-			<HeroSection imageSrc="/products.png">
+			<HeroSection imageSrc="/home.jpg">
 				<div className="text-center">
-					<h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-						Our Products
-					</h1>
-					<p className="mt-6 text-lg leading-8 text-gray-600">
+					<HeroTitle title={metadata.title} />
+					<p className="mt-4 text-lg leading-8 text-slate-300 mb-4">
 						{metadata.description}
 					</p>
 				</div>

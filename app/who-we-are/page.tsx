@@ -2,6 +2,7 @@ import React from "react";
 import Content from "@/app/components/Content";
 import TitleSection from "@/app/components/TitleSection"; // Assuming you have a TitleSection component
 import HeroSection from "../components/HeroSection";
+import HeroTitle from "../components/HeroTitle";
 
 export const metadata = {
 	title: "Who We Are",
@@ -11,24 +12,21 @@ export const metadata = {
 const WhoWeArePage = () => {
 	return (
 		<>
-			<HeroSection imageSrc="/who-we-are.png">
+			<HeroSection imageSrc="/home.jpg">
 				<div className="text-center">
-					<h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-						Crafting Excellence in Optronics
-					</h1>
-					<p className="mt-6 text-lg leading-8 text-gray-600">
-						Embark on a journey through our story, mission, and the minds that
-						drive innovation at Atlas Optronics JV.
+					<HeroTitle title={metadata.title} />
+					<p className="mt-4 text-lg leading-8 text-slate-300 mb-4">
+						{metadata.description}
 					</p>
 				</div>
 			</HeroSection>
 			<Content>
 				<TitleSection title="Who We Are" />
 
-				<div className="mt-3 text-zinc-700 space-y-6">
+				<div className="mt-3 text-slate-200 space-y-6">
 					<p className="text-lg leading-8">
 						At{" "}
-						<span className="font-semibold text-gray-900">
+						<span className="font-semibold text-slate-200">
 							{" "}
 							Atlas Optronics JV
 						</span>
@@ -48,14 +46,14 @@ const WhoWeArePage = () => {
 								Company History
 							</h3>
 							<p className="text-lg">
-								As a vanguard of the
+								As a vanguard of the 
 								<a
 									href="https://atlasgroup.ae/"
-									className="text-slate-600 hover:underline"
+									className="text-slate-100 font-semibold hover:underline ml-1"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
-									Atlas Group of Companies
+									 Atlas Group of Companies
 								</a>
 								, we stand tall on a legacy of over thirty years. This legacy is
 								etched with the pursuit of excellence and a rich history of

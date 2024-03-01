@@ -8,6 +8,7 @@ const SolutionList = () => {
 			{solutions.map((item, index) => (
 					<div className="relative group max-h-64 transition-transform duration-300 hover:scale-110" key={index}>
 							<a href={item.href} className="">
+							<div className="absolute inset-0 transition-opacity duration-300 ease-in-out backdrop-opacity-10 backdrop-invert bg-white/10 group-hover:opacity-0"></div>
 								<Image
 									src={item.image}
 									alt={item.name}

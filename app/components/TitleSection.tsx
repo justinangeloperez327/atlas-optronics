@@ -5,7 +5,7 @@ interface Props {
 }
 
 const TitleSection = ({ title }: Props) => {
-	return <h1 className="text-4xl font-bold text-zinc-700 py-4">{title}</h1>;
+	return <h1 className="text-4xl font-bold text-slate-300 py-4">{title}</h1>;
 };
 
 export default TitleSection;

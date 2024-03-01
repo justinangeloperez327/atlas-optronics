@@ -12,16 +12,16 @@ const ContactPage = () => {
 			<div className="flex flex-wrap justify-center lg:justify-between items-start space-y-8 lg:space-y-0 lg:space-x-8">
 				<div className="max-w-md w-full lg:w-1/2">
 					<div className="h-96"> </div>
-					<div>
+					<div className="bg-secondary p-4">
 						<div className="text-lg font-semibold">Our Head Office</div>
-						<p className="text-gray-600">Atlas Optronics</p>
-						<p className="text-gray-600">8th Floor Sheikha Jameela Tower,</p>
-						<p className="text-gray-600">Al Falah St., Al Danah</p>
-						<p className="text-gray-600">Abu Dhabi, United Arab Emirate</p>
+						<p className="text-slate-300">Atlas Optronics</p>
+						<p className="text-slate-300">8th Floor Sheikha Jameela Tower,</p>
+						<p className="text-slate-300">Al Falah St., Al Danah</p>
+						<p className="text-slate-300">Abu Dhabi, United Arab Emirate</p>
 						<div className="text-lg font-semibold mt-4">Our Service Centre</div>
-						<p className="text-gray-600">Atlas Optronics Service Centre</p>
-						<p className="text-gray-600">Business Park - ICAD 3</p>
-						<p className="text-gray-600">Muṣaffah South, Abu Dhabi, UAE</p>
+						<p className="text-slate-300">Atlas Optronics Service Centre</p>
+						<p className="text-slate-300">Business Park - ICAD 3</p>
+						<p className="text-slate-300">Muṣaffah South, Abu Dhabi, UAE</p>
 					</div>
 				</div>
 				<div className="max-w-md w-full lg:w-1/2">

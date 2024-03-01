@@ -5,12 +5,12 @@ import TextArea from "./TextArea";
 const ContactUsForm = () => {
 	return (
 		<>
-			<div className="max-w-md w-full space-y-8 shadow-lg border-2 border-blue-900 p-3 border-radius rounded-lg">
+			<div className="max-w-md w-full space-y-8 shadow-lg border-2 bg-secondary p-3 border-radius border-black rounded-lg">
 				<div>
 					<h1 className="text-center text-3xl font-extrabold text-gray-900">
 						Contact Us
 					</h1>
-					<p className="mt-2 text-center text-sm text-gray-600">
+					<p className="mt-2 text-center text-sm text-slate-300">
 						You have questions? Send us a message!
 					</p>
 				</div>
