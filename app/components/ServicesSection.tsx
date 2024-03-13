@@ -3,7 +3,7 @@ import Image from "next/image";
 import { services, subtitle } from "@/constants/services";
 import GridContainer from "./GridContainer";
 
-const ProductsSection = () => {
+const ServicesSection = () => {
 	return (
 		<div className="bg-primary">
 			<div className="container mx-auto p-6 mb-5 relative z-20">
@@ -37,4 +37,4 @@ const ProductsSection = () => {
 	);
 };
 
-export default ProductsSection;
+export default ServicesSection;

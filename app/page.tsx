@@ -17,7 +17,7 @@ const HomePage = () => {
 			<HeroSection imageSrc="/home.jpg">
 				<div className="text-center">
 					<HeroTitle title={metadata.title} />
-					<p className="mt-4 text-lg leading-8 text-slate-300 mb-4">
+					<p className="mt-4 text-lg leading-8 text-slate-200 mb-4">
 						{metadata.description}
 					</p>
 					<Link

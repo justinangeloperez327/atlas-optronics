@@ -7,7 +7,7 @@ const ContactUsForm = () => {
 		<>
 			<div className="max-w-md w-full space-y-8 shadow-lg border-2 bg-secondary p-3 border-radius border-black rounded-lg">
 				<div>
-					<h1 className="text-center text-3xl font-extrabold text-gray-900">
+					<h1 className="text-center text-3xl font-extrabold text-slate-300">
 						Contact Us
 					</h1>
 					<p className="mt-2 text-center text-sm text-slate-300">

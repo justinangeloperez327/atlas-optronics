@@ -8,7 +8,7 @@ export const metadata = {
 
 const ContactPage = () => {
 	return (
-		<div className="container mx-auto pt-40 pb-12 px-4 sm:px-6 lg:px-8">
+		<div className="container h-screen mx-auto mt-40 px-4 sm:px-6 lg:px-8">
 			<div className="flex flex-wrap justify-center lg:justify-between items-start space-y-8 lg:space-y-0 lg:space-x-8">
 				<div className="max-w-md w-full lg:w-1/2">
 					<div className="h-96"> </div>

@@ -20,71 +20,14 @@ const WhoWeArePage = () => {
 					</p>
 				</div>
 			</HeroSection>
-			<Content>
-				<TitleSection title="Who We Are" />
-
-				<div className="mt-3 text-slate-200 space-y-6">
-					<p className="text-lg leading-8">
-						At{" "}
-						<span className="font-semibold text-slate-200">
-							{" "}
-							Atlas Optronics JV
-						</span>
-						, we`re more than just a company; we`re your definitive ally in the
-						realm of advanced sensor solutions. Our presence spans land, sea,
-						and air — fortified by a robust foundation in the UAE and the
-						formidable Atlas Group. Innovation is our compass, driving us to
-						ensure paramount security and surveillance with our pioneering
-						optronics technologies.
-					</p>
-
-					<TitleSection title="About Us" />
-
-					<div className="space-y-6">
-						<div className="border-l-4 border-slate-500 pl-4">
-							<h3 className="text-xl font-semibold mt-2 mb-3">
-								Company History
-							</h3>
-							<p className="text-lg">
-								As a vanguard of the 
-								<a
-									href="https://atlasgroup.ae/"
-									className="text-slate-100 font-semibold hover:underline ml-1"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									 Atlas Group of Companies
-								</a>
-								, we stand tall on a legacy of over thirty years. This legacy is
-								etched with the pursuit of excellence and a rich history of
-								transforming challenges into landmarks of innovation and quality
-								within the UAE and the broader Gulf Region.
-							</p>
-						</div>
-						<div className="border-l-4 border-slate-500 pl-4">
-							<h3 className="text-xl font-semibold mt-2 mb-3">
-								Mission and Values
-							</h3>
-							<p className="text-lg">
-								Our mission soars beyond conventional horizons — to furnish
-								unparalleled optoelectronic and sensor solutions that equip our
-								clients with unrivaled security capabilities. Core values such
-								as integrity, innovation, and a steadfast commitment to our
-								customers illuminate our path forward.
-							</p>
-						</div>
-						<div className="border-l-4 border-slate-500 pl-4">
-							<h3 className="text-xl font-semibold mt-2 mb-3">Our Team</h3>
-							<p className="text-lg">
-								Our fortress is our people, an assembly of professionals each
-								with a saga of expertise. Their unwavering dedication forms the
-								cornerstone of Atlas Optronics JV, all united under a singular
-								pledge to deliver nothing but extraordinary.
-							</p>
-						</div>
+			<div className="relative mt-20">
+				<div className="container bg-primary size-6/12 mx-auto p-6 mb-5">
+					<div className="mb-2 md:mb-10 ml-4">
+						<h1 className="text-4xl mb-8">HENSOLDT – The Sensor Solutions House</h1>
+						<p className="text-xl pr-2 md:pr-32 lg:pr-40 xl:pr-96">HENSOLDT’s main areas of activity include intelligence and reconnaissance sensors, solutions for controlling the electromagnetic spectrum and mission avionics systems. Our broadly diversified product portfolio is geared towards customers in the defence and security arenas and covers the entire spectrum for air, sea and land missions. HENSOLDT’s solutions are deployed on various platforms, including helicopters, fixed-wing aircraft, unmanned aerial vehicles, ships and submarines, armoured vehicles and satellites.</p>
 					</div>
 				</div>
-			</Content>
+			</div>
 		</>
 	);
 };

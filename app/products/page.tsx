@@ -1,15 +1,13 @@
 import React from "react";
-import { description } from "@/constants/products";
 import HeroSection from "@/app/components/HeroSection";
-import ProductList from "@/app/components/ProductList";
-import Content from "@/app/components/Content";
-import Title from "@/app/components/TitleSection";
 import HeroTitle from "../components/HeroTitle";
+import ProductsSection from "../components/ProductsSection";
 
 export const metadata = {
 	title: "Products",
 	description:
-		"Discover cutting-edge security solutions with Atlas Optronics. Browse our range of products tailored to your safety needs.",
+		"Our main areas of activity include ISR sensors, solutions for the electromagnetic spectrum and mission avionics systems. We combine mission-critical technologies into package solutions that substantially improve detection capabilities through sensor and data fusion. In this way, HENSOLDT helps to avert threats to armed forces and society.",
+
 };
 
 const ProductsPage = () => {
@@ -24,13 +22,9 @@ const ProductsPage = () => {
 				</div>
 			</HeroSection>
 
-			<Content>
-				<div className="my-2">
-					<Title title="Products" />
-					<p className="text-lg leading-8">{description}</p>
-				</div>
-				<ProductList />
-			</Content>
+			<div className="relative mt-20">
+				<ProductsSection />
+			</div>
 		</>
 	);
 };
