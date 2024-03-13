@@ -20,7 +20,7 @@ export const products = [
 					"Our solutions represents a symbiosis of high-performance and safety with cyber–security attack resilient architecture.",
 					"Over 30 years of experience in Mission Computing and more than 6500 delivered Airborne Computers operated on all major fixed-wing and helicopter civil and military platforms."
 				],
-				portfolio: [
+				portfolioList: [
 					"Single & Multi Core Processing computers",
 					"Various accessories for small, medium and large sized computers",
 					"Flexible control options (control unit, keyboard, touchscreen, line select keys joystick)",
@@ -40,7 +40,7 @@ export const products = [
 					"SferiRec, our Flight and Mission Data Recording and Management product family, comprises of flight and mission data recording, data transfer and analysis capabilities which are key capabilities for the complete mission life cycle.",
 					"The recorded flight and voice data are securely stored on crash-protected memory, both fixed-installed and deployable.",
 				],
-				portfolio: [
+				portfolioList: [
 					"Lightweight Crash Recorder (LCR) models",
 					"Fixed Crash Recorder (FCR) models",
 					"Deployable Crash Recorder (DCR) models",
@@ -58,7 +58,7 @@ export const products = [
 					"Receiving and sending data between aircraft and ground during a flight is essential for today’s missions.",
 					"Our connectivity systems provide the capability to communicate in a fast and secure manner and can easily be integrated with different systems on the aircraft."
 				],
-				portfolio: [
+				portfolioList: [
 					"Cyber Security Solutions",
 					"Flying Firewall and Connectivity systems",
 					"Data exchange capabilities between ground and air",
@@ -77,7 +77,7 @@ export const products = [
 					"Modern technology and sensorics enable the operator with a 360° view, terrain and obstacle warnings and an ease visualization and control of broad range of third party avionics systems.",
 					"With a variety of options to expand and evolve the capabilities of a mission, our systems offer a tremendous range of individual, mission-customized system configurations and mission tools to support the operation."
 				],
-				portfolio: [
+				portfolioList: [
 					"Situational Awareness and Mission Management Systems",
 					"State of the Art maps",
 					"Fully certified computers",
@@ -94,7 +94,7 @@ export const products = [
 					"Providing the capability to process a multitude of internal and external video/audio sources to support the operator during flight are rudimental requirements.",
 					"Video Switching Matrix, Video Processing engines and Multiplexers tailor and combine the video inputs and routes the imagery to the right video target, such as displays, downlink, internal or external video recorder.",
 				],
-				portfolio: [
+				portfolioList: [
 					"Powerful mission systems for camera operations",
 					"Video Distribution Units",
 					"Video Configurations options",
@@ -114,7 +114,7 @@ export const products = [
 					"The products offer the capability to create a mission network between multiple assets to enhance situational awareness. Being independent utilizing a solution which allows using confidential, or the preparation of various maps and databases.",
 					"Trainings can be supported by using simulators and emulators to improve the handling of the systems during a mission."
 				],
-				portfolio: [
+				portfolioList: [
 					"Weight & Balance solutions for Windows PC, Laptop and iPad",
 					"Mission Planning Tools",
 					"Using/preparation of confidential maps and databases",
@@ -135,7 +135,7 @@ export const products = [
 					"Our range of products  supports your aircraft to reduce the life cycle costs by providing optimum work orders and avoiding unnecessary measures. This will maximize the number of aircraft ready for operation.",
 					"Read-out data with user-defined recording parameters for the analysis of maintenance data or aircraft accidents.",
 				],
-				portfolio: [
+				portfolioList: [
 					"Planning for optimum aircraft availability",
 					"State Data Carrier Adapter - Interface device for read- out SSDC",
 					"Enhanced Handheld Computer - recorder models for large aircraft",
@@ -150,6 +150,11 @@ export const products = [
 		title: "Optronics",
 		slug: 'optronics',
 		subtitle: "For a clear view, day and night",
+		descriptions: [
+			"We design, develop and manufacture optical, optronic and precision-engineered products for defence and non-defence applications.",
+			"These optronic products are used globally by armed forces and security personnel for monitoring, identification and classification purposes, as well as for highly precise measurement, evaluation, targeting and self-protection.",
+			"They are deployed on various platforms, including submarines, armoured vehicles, manned and unmanned aircraft and satellites, for land, air, sea and space missions."
+		],
 		image: "/home-products/optronics.jpg",
 		subProducts: [
 			{
@@ -158,12 +163,12 @@ export const products = [
 				slug: 'airborne-optronics',
 				subtitle: "",
 				descriptions: [
-					"We develop and manufacture airborne electro-optical sensors and systems for integration into aircraft, unmanned air vehicles and helicopters. These sophisticated solutions enable effective surveillance, identification, intelligence gathering and targeting from the vantage point of an airborne platform.",
+					"We develop and manufacture <strong>airborne</strong> electro-optical sensors and systems for integration into aircraft, unmanned air vehicles and helicopters. These sophisticated solutions enable effective surveillance, identification, intelligence gathering and targeting from the vantage point of an airborne platform.",
 					"Our sensors permit aircrews to detect, recognize and identify vehicles and individuals kilometers away, from a safe and discreet distance in law enforcement and military missions. The HD images enable detailed aerial photo analysis so that infrastructures, troop movements and targets are clearly recognizable, even under detrimental light and weather conditions.",
 					"In addition, we offer self-protection systems which detect missiles, laser range finders, laser target designators, laser beam rider missiles and radar guided threats. According to customer wishes, counter-measure capabilities such as flares and jamming technology can be integrated.",
 					"Our airborne systems follow a modular set-up, facilitating maintenance and repairs which in turn reduces lifecycle costs. Our high-performance systems are combat proven, reliable and engineered for long endurance."
 				],
-				portfolio: [
+				portfolioList: [
 					"Multi-spectral observation, surveillance and targeting systems for manned and unmanned aircraft, rotary as well as fixed-wing",
 					"High-performance optical frontends and EO-cameras for tactical and strategic reconnaissance pods for fighter aircraft",
 					"Radar, laser and missile warning systems, including fully autonomous systems with integrated counter-measure capabilities",
@@ -181,7 +186,7 @@ export const products = [
 					"These sensor solutions can be easily integrated into every new wheeled, tracked and armoured vehicle or into legacy systems at any time, as they interface with both, new and existing fire control systems. The long-range sensors have been stabilized to defy difficult terrain. Driver’s vision enhancers allow drivers to manoeuver at top speeds under all light conditions.",
 					"Moreover, we offer a self-protection system for armoured vehicles. It combines warning sensors, which detect missile and laser threats, with appropriate countermeasures.",
 				],
-				portfolio: [
+				portfolioList: [
 					"Eye-safe laser range finders with low to high pulse repetition",
 					"Commander periscope with gyroscope-stabilized target lines and integrated laser rangefinder for armoured vehicles",
 					"Gunnery targeting instruments with gyroscope-stabilized target lines and integrated laser rangefinder for armoured vehicles",
@@ -203,7 +208,7 @@ export const products = [
 					"With all devices coming from the same reliable source, full modularity is guaranteed and customization is possible. We offer the full range of targeting and observation optics and we are proud to support conventional troops and special forces around the globe.",
 					"The optics are robust enough for use in every climatic environment and offer unprecedented clear vision in all light conditions. Our sights and night vision attachments are selected for the German “Soldier of the Future” programme (IdZ-1 and IdZ-2)."
 				],
-				portfolio: [
+				portfolioList: [
 					"Targeting optics for short and intermediate ranged weapons like assault rifles, optional with reticle illumination and red dot",
 					"Observation optics with a high magnification of up to 60x, bright, a high-contrast image at all magnification levels, reticles that change size congruent with magnification level",
 					"Residual light intensifiers and thermal imagers as modular night-vision attachments for assault rifles, lightweight machine guns and sniper rifles",
@@ -222,7 +227,7 @@ export const products = [
 					"Our latest models are all IP-based. That allows us to achieve a substantial reduction of integration efforts into third-party and/or existing legacy systems.",
 					"Our recent move towards a modular architecture further enables end customers and/or local industry to perform in-country maintenance and service tasks. Most of these can even be conducted on-site. This drastically reduces system downtime and builds up technical expertise in-country."
 				],
-				portfolio: [
+				portfolioList: [
 					"Short-, medium- and long-range all weather optronic sensors/multi-sensor platforms for mobile and stationary surveillance.",
 					"Border surveillance: stationary and mobile systems, stand-alone or integrated solutions",
 					"Critical infrastructure such as airports, harbours, military camps",
@@ -244,7 +249,7 @@ export const products = [
 					"Our submarine optronic solutions are providing high resolution all-light, all-weather visual capabilities. The systems can be completely integrated into the combat management system (CMS) or operate as a stand-alone solution in new-built or retrofit submarines.",
 					"In addition, we offer laser detection and identification systems for warning from laser-based weapon systems."
 				],
-				portfolio: [
+				portfolioList: [
 					"Direct view, hull-penetrating periscopes of the SERO family integrating a broad variety of optronic technologies",
 					"Non-hull penetrating optronics masts of the OMS family which are remote controlled from the CMS or a stand-alone console allowing to gain high quality image data at a very short exposure time.",
 					"SERO and OMS systems can be individually combined and customized to the navy’s requirements.",
@@ -264,7 +269,7 @@ export const products = [
 					"Our strong design and engineering ethos, paired with agile, responsive project management, enables us to deliver world-class optical systems. Designed to operate reliably under the most adverse environmental conditions, they are tough enough to withstand the rigors of protracted space missions.",
 					"Customers value our ability to unite design and systems engineering with manufacturing, integration, alignment and verification processes. Our on-site assets include class-100 clean rooms, thermal vacuum chambers with optical access, shock and vibration testing facilities as well as environmental test chambers.",
 				],
-				portfolio: [
+				portfolioList: [
 					"Precision mirrors for earth observation",
 					"Cryomechanisms for satellites",
 					"Optics for infrared space applications",
@@ -283,7 +288,7 @@ export const products = [
 					"Our strong design and engineering ethos, paired with agile, responsive project management, enables us to deliver world-class optical systems. Designed to operate reliably under the most adverse environmental conditions, they are tough enough to withstand the rigors of protracted space missions.",
 					"Customers value our ability to unite design and systems engineering with manufacturing, integration, alignment and verification processes. Our on-site assets include class-100 clean rooms, thermal vacuum chambers with optical access, shock and vibration testing facilities as well as environmental test chambers."
 				],
-				portfolio: [
+				portfolioList: [
 					"Planning for optimum aircraft availability",
 					"State Data Carrier Adapter - Interface device for read- out SSDC",
 					"Enhanced Handheld Computer - recorder models for large aircraft",
@@ -387,5 +392,3 @@ export const products = [
 	},
 ];
 
-export const avionicsProducts = products[0].subProducts;
-export const optronicsProducts = products[1].subProducts;

@@ -5,10 +5,10 @@ interface Props {
   subtitle: string;
   imageSrc: string;
   descriptions: Array<string>;
-  portfolio: Array<string>;
+  portfolioList: Array<string>;
 }
 
-const ItemCard = ({ imageSrc, title, subtitle, descriptions, portfolio }: Props) => {
+const ItemCard = ({ imageSrc, title, subtitle, descriptions, portfolioList }: Props) => {
   return (
     <div className="relative container mx-auto lg:ml-50 mt-20">
       <div className="relative max-w">
@@ -22,7 +22,7 @@ const ItemCard = ({ imageSrc, title, subtitle, descriptions, portfolio }: Props)
                 <div className="tracking-wide text-4xl text-slate-700 mb-2">{title}</div>
                 <div className="tracking-wide text-xl text-slate-600 mb-4">{subtitle}</div>
                 {descriptions.map((description, index) => (
-                  <p key={index} className="text-gray-600 mb-4">{description}</p>
+                  <p key={index} className="text-gray-600 mb-4" dangerouslySetInnerHTML={{ __html: description }}></p>
                 ))}
               </div>
             </div>
@@ -32,7 +32,7 @@ const ItemCard = ({ imageSrc, title, subtitle, descriptions, portfolio }: Props)
           <div className="w-4/5 lg:w-3/5 py-6 bg-secondary text-slate-200 shadow-lg z-10">
             <h4 className="text-4xl ml-10">Portfolio</h4>
             <ul className="list-disc mt-5 mx-10">
-              {portfolio.map((description, index) => (
+              {portfolioList.map((description, index) => (
                 <li key={index}>
                   <p className="text-slate-200">{description}</p>
                 </li>
