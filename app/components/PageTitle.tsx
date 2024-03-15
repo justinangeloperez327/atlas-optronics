@@ -13,7 +13,7 @@ const PageTitle = ({ title, subtitle, descriptions }: Props) => {
           <h1 className="text-4xl lg:text-6xl font-bold mb-2 md:mb-10">{ title }</h1>
 					<div className="mx-auto px-4 mt-4">
             <p className="text-4xl pr-2 md:pr-32 lg:pr-40 xl:pr-96">{ subtitle }</p>
-            {descriptions.map((description, index) => (
+            {descriptions?.map((description, index) => (
               <p key={index} className="text-lg pr-2 mt-10 md:pr-24 lg:pr-40 xl:pr-96">{ description }</p>
             ))}
 					</div>

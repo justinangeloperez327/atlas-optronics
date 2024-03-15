@@ -1,7 +1,7 @@
 import React from "react";
 import HeroSection from "@/app/components/HeroSection";
-import HeroTitle from "../components/HeroTitle";
-import ProductsSection from "../components/ProductsSection";
+import HeroTitle from "@/app/components/HeroTitle";
+import ProductsSection from "@/app/components/ProductsSection";
 
 export const metadata = {
 	title: "Products",
