@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
 	return (
-		<footer className="mx-auto mt-32 w-full max-w-container px-4 sm:px-6 lg:px-8 bg-gray-900 text-white py-2">
+		<footer className="mx-auto mt-32 w-full max-w-container px-4 sm:px-6 lg:px-8 bg-gray-900  py-2">
 			<div className="flex w-full justify-center">
 				<ul className="flex space-x-4">
 					{/* TODO: Replace # with actual URLs */}
@@ -12,7 +12,7 @@ const Footer = () => {
 							target="_blank"
 							rel="noopener noreferrer"
 							aria-label="Facebook"
-							className="text-white hover:text-gray-400"
+							className=" hover:text-gray-400"
 						>
 							{/* TODO: Replace text with SVG Icon */}
 							Facebook
@@ -24,7 +24,7 @@ const Footer = () => {
 							target="_blank"
 							rel="noopener noreferrer"
 							aria-label="Twitter"
-							className="text-white hover:text-gray-400"
+							className=" hover:text-gray-400"
 						>
 							{/* TODO: Replace text with SVG Icon */}
 							Twitter
@@ -36,7 +36,7 @@ const Footer = () => {
 							target="_blank"
 							rel="noopener noreferrer"
 							aria-label="LinkedIn"
-							className="text-white hover:text-gray-400"
+							className=" hover:text-gray-400"
 						>
 							{/* TODO: Replace text with SVG Icon */}
 							LinkedIn

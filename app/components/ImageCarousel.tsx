@@ -31,7 +31,7 @@ const ImageCarousel = () => {
               <Image src={image.src} alt={image.title} width={500} height={500} className="block w-64 h-64 object-cover" />
               <p>{image.title}</p>
               <p>{image.description}</p>
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              <button className="bg-blue-500 hover:bg-blue-700  font-bold py-2 px-4 rounded">
                 Read More
               </button>
             </>

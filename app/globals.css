@@ -2,22 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-blue-sky {
-  background-image: linear-gradient(110deg, #0A438A 80%, #3770B6 25%);
-}
-
-.bg-blue-sky-invert {
-  background-color: #3770B6 ;
-}
-
-.bg-primary {
-  background-color: #033f63 ;
-}
-
-.bg-secondary {
-  background-color: #28666e ;
-}
-
-.bg-light {
-  background-color: #28666e ;
-}

@@ -1,47 +1,56 @@
+
 import Image from 'next/image';
+import RemoveColorOnScroll from './RemoveColorOnScroll';
+import RevealOnScroll from './RevealOnScroll';
 
 interface Props {
   title: string;
   subtitle: string;
   imageSrc: string;
-  descriptions: Array<string>;
-  portfolioList: Array<string>;
+  descriptions?: Array<string>;
+  portfolioList?: Array<string>;
+  equipments?: Array<any>;
 }
 
 const ItemCard = ({ imageSrc, title, subtitle, descriptions, portfolioList }: Props) => {
   return (
-    <div className="relative container mx-auto lg:ml-50 mt-20">
-      <div className="relative max-w">
-        <div className="lg:flex">
-          <div className="w-full lg:w-3/5 lg:pl-0 h-100 z-10">
-            <Image className="object-fill object-center h-full xw-auto" src={imageSrc} alt={title} width={1200} height={800} />
-          </div>
-          <div className="w-full lg:w-2/5 lg:-ml-10 lg:-mt-10">
-            <div className='bg-gray-200 p-10'>
-              <div className='ml-5'>
-                <div className="tracking-wide text-4xl text-slate-700 mb-2">{title}</div>
-                <div className="tracking-wide text-xl text-slate-600 mb-4">{subtitle}</div>
-                {descriptions.map((description, index) => (
-                  <p key={index} className="text-gray-600 mb-4" dangerouslySetInnerHTML={{ __html: description }}></p>
+    <>
+      <div className="relative h-screen container  mx-auto">
+        <div className="relative h-1/2">
+          <div className="flex">
+            <div className="relative w-3/5">
+              <Image className="object-contain h-full w-auto min-h-80" src={imageSrc} alt={title} width={1200} height={800} />
+            </div>
+            <div className='relative w-2/5 bg-gray-200 p-5 mx-2'>
+                {title && <p className="tracking-wide text-4xl mb-2">{title}</p>}
+                {subtitle && <p className="text-2xl mb-4">{subtitle}</p>}
+
+                {descriptions && descriptions.length > 0 && descriptions.map((description, index) => (
+                  <p key={index} className="mb-4" dangerouslySetInnerHTML={{ __html: description }}></p>
                 ))}
-              </div>
             </div>
           </div>
         </div>
-        <div className="flex ml-12 md:ml-20 lg:ml-96 -mt-10">
-          <div className="w-4/5 lg:w-3/5 py-6 bg-secondary text-slate-200 shadow-lg z-10">
-            <h4 className="text-4xl ml-10">Portfolio</h4>
-            <ul className="list-disc mt-5 mx-10">
-              {portfolioList.map((description, index) => (
-                <li key={index}>
-                  <p className="text-slate-200">{description}</p>
-                </li>
-              ))}
-            </ul>
+        <div className="relative h-1/2 ">
+          <div className="flex">
+            <div className="relative w-1/3 bg-gray-200 p-5">
+                {portfolioList && portfolioList.length > 0 &&
+                <div>
+                  <h4 className="text-4xl ml-10">Portfolio</h4>
+                    <ul className="list-disc mt-5 mx-10">
+                      {portfolioList.map((description, index) => (
+                        <li key={index}>
+                          <p  className="mb-4" dangerouslySetInnerHTML={{ __html: description }}></p>
+                        </li>
+                      ))}
+                    </ul>
+                </div>
+              }
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

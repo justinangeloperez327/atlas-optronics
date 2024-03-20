@@ -1,8 +1,8 @@
 import React from "react";
 import HeroSection from "@/app/components/HeroSection";
 import HeroTitle from "@/app/components/HeroTitle";
-import ProductsSection from "@/app/components/ProductsSection";
-
+import { products } from "@/constants/products";
+import ItemList from "../components/ItemList";
 export const metadata = {
 	title: "Products",
 	description:
@@ -13,18 +13,17 @@ export const metadata = {
 const ProductsPage = () => {
 	return (
 		<>
-			<HeroSection imageSrc="/home.jpg">
+			<HeroSection imageSrc="/products/background.jpg">
 				<div className="text-center">
 					<HeroTitle title={metadata.title} />
-					<p className="mt-4 text-lg leading-8 text-slate-300 mb-4">
-						{metadata.description}
-					</p>
+					<div className="container mx-auto">
+						<p className="mt-4 text-lg leading-8 text-slate-200 mb-4">
+							{metadata.description}
+						</p>
+					</div>
 				</div>
 			</HeroSection>
-
-			<div className="relative mt-20">
-				<ProductsSection />
-			</div>
+			<ItemList products={products || []}></ItemList>
 		</>
 	);
 };

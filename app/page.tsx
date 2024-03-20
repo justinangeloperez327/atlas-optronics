@@ -14,15 +14,19 @@ export const metadata = {
 const HomePage = () => {
 	return (
 		<>
-			<HeroSection imageSrc="/home.jpg">
+			<HeroSection imageSrc="/atlas-bg.png">
 				<div className="text-center">
-					<HeroTitle title={metadata.title} />
+					<p className="text-6xl font-bold tracking-tight text-slate-100 drop-shadow-md">
+						<span className="">Welcome</span><br />
+						<span className="">to</span><br />
+						<span className="">Atlas Optronics</span>
+					</p>
 					<p className="mt-4 text-lg leading-8 text-slate-200 mb-4">
 						{metadata.description}
 					</p>
 					<Link
 						href="/who-we-are"
-						className="mt-6 bg-blue-500 hover:bg-blue-600 text-xl text-white font-semibold py-4 px-8 transition duration-300 ease-in-out"
+						className="mt-6 border-solid border-2 border-blue-500 bg-white text-slate-800 hover:bg-blue-600 text-xl hover:text-slate-200 font-semibold py-4 px-8 transition duration-300 ease-in-out"
 					>
 						Read More
 					</Link>
@@ -31,9 +35,9 @@ const HomePage = () => {
 			<div className="relative">
 				<SolutionsSection />
 			</div>
-			<div className="relative mb-20">
+			{/* <div className="relative mb-20">
 				<InsightsSection />
-			</div>
+			</div> */}
 			<div className="relative mb-20">
 				<ProductsSection />
 			</div>

@@ -21,9 +21,9 @@ export default function RootLayout({
 }) {
 	return (
 		<>
-			<html lang="en">
+			<html lang="en" className="scroll-smooth">
 				<head></head>
-				<body className={`text-white ${inter.className} `}>
+				<body className={`${inter.className} `}>
 					<Navbar />
 					<div className="relative">
 						<main>{children}</main>

@@ -14,6 +14,7 @@ export const products = [
 				id: 1,
 				title: "Airborne Computing",
 				slug: 'airborne-computing',
+				image: "/products/avionics/airborne-computing.jpg",
 				subtitle: "Requirements for modern day aircraft are continually increasing a wide range of deployment scenarios and multi-role capabilities.",
 				descriptions: [
 					"With our certified and qualified airborne computers and flight control systems we offer small, compact, lightweight and flexibly controlled solutions to improve mission operations and meet the needs of various users and platforms.",
@@ -29,12 +30,82 @@ export const products = [
 					"Flight Control Computer",
 					"Customizable Mission Computing"
 				],
-				image: "/products/avionics/airborne-computing.jpg",
+				equipments: [
+					{
+						title: "Cavion – Airborne Computing Family",
+						list: [
+							{
+								title: "CaviFlight",
+								subtitle: "Flight Control Computer",
+								slug: 'caviflight',
+								image: "/products/avionics/equipments/caviflight.jpg"
+							},
+							{
+								title: "CaviMission",
+								subtitle: "For civil and military applications",
+								slug: 'cavimission',
+								image: "/products/avionics/equipments/cavimission.jpg"
+							},
+							{
+								title: "CaviPro",
+								subtitle: "Customized Military Airborne Computer",
+								slug: 'cavipro',
+								image: "/products/avionics/equipments/cavipro.jpg"
+							}
+						]
+					},
+					{
+						title: "Other Airborne Computing Systems",
+						list: [
+							{
+								title: "Tactical Computer",
+								subtitle: "For security and intelligence missions",
+								image: "/products/avionics/equipments/tactical-computer.jpg"
+							},
+							{
+								title: "Drone Computer",
+								subtitle: "",
+								image: "/products/avionics/equipments/drone-computer.jpg"
+							},
+							{
+								title: "XtremView APC",
+								subtitle: "Aircraft Panel PC",
+								image: "/products/avionics/equipments/xtremvuew-pac.jpg"
+							},
+							{
+								title: "RV1",
+								subtitle: "Central Part of the Video Management System",
+								image: "/products/avionics/equipments/rv1.jpg"
+							},
+							{
+								title: "EB1",
+								subtitle: "Multipurpose Airborne Computer",
+								image: "/products/avionics/equipments/eb1.jpg"
+							},
+							{
+								title: "RE1",
+								subtitle: "The RE1 is the Heart of the Enhanced Reality System",
+								image: "/products/avionics/equipments/re1.jpg"
+							},
+							{
+								title: "RN7 / RN7CM",
+								subtitle: "Digital Map Generator of the EuroNav 7",
+								image: "/products/avionics/equipments/rn7-rn7cm.jpg"
+							},
+							{
+								title: "Micro-VMS",
+								subtitle: "Video Switching & Landing Assistant",
+								image: "/products/avionics/equipments/micro-vms.jpg"
+							}
+						]
+					}
+				]
 			},
 			{
 				id: 2,
 				title: "Flight and Mission Data Recording & Management",
 				slug: 'flight-and-mission-data-recording-and-management',
+				image: "/products/avionics/flight-and-mission-data-recording-management.png",
 				subtitle: "",
 				descriptions: [
 					"SferiRec, our Flight and Mission Data Recording and Management product family, comprises of flight and mission data recording, data transfer and analysis capabilities which are key capabilities for the complete mission life cycle.",
@@ -46,7 +117,7 @@ export const products = [
 					"Deployable Crash Recorder (DCR) models",
 					"Solid State Data Carrier and Data Transfer Unit (SSDC + DTU) -   a transfer solution for mission and maintenance data",
 				],
-				image: "/products/avionics/flight-and-mission-data-recording-management.png",
+				
 			},
 			{
 				id: 3,
@@ -314,6 +385,11 @@ export const products = [
 					"The rapidly increasing volume of air traffic poses increasing challenges for military and civil air traffic control. HENSOLDT is responding to these challenges with the further development of its military and civil ATC systems. HENSOLDT’s ATC solutions include innovative new developments as the Twinvis passive radar or the ASR-NG airport surveillance radar: The latest generation of this air traffic control radar combines primary and secondary radar to provide comprehensive 3D information about the aircraft detected.",
 
 				],
+				portfolioList: [
+					"Defence and non-defence air traffic control radar",
+					"IFF secondary radar",
+					"Passive radar"
+				],
 				image: "/products/radar-coms/air-surveillance-radars.jpg",
 			},
 			{
@@ -326,6 +402,16 @@ export const products = [
 					"With five decades experience of designing, manufacturing, integrating and maintaining IFF equipment including military cryptographic computers, HENSOLDT is currently one of the major IFF Mode 5 technology and capability providers worldwide. Conceived with modular and sustainable design our IFF portfolio is certified with AIMS and NATO STANAG 4193 Ed.3, ensuring full interoperability across the US and NATO allies.",
 					"Today our IFF portfolio equip a whole range of different platform types in the world, covering all operational needs from airborne UAV, helicopters, fighters aircrafts, to ground-based fixed and air defence radar (including civil and military airport surveillance radar), up to complex naval vessels.",
 					"HENSOLDT datalink technology has been successfully used on multiple airborne platforms like Harfang, KZO, Mirage 2000, Airbus platforms, counting more than 50,000 flying hours. Our newest family of wide-band and narrow-band line-of-sight datalink solutions called Lygarion uses the most recent technology in order to enable the secure and real-time acquisition and exchange of operational data between multiple military platforms."
+				],
+				portfolioList: [
+					"Defence and non-defence lightweight transponders",
+					"Short, medium and long range IFF interrogators",
+					"IFF Transponders",
+					"IFF non rotating Antenna",
+					"Naval Cabinet",
+					"Cryptographic computers",
+					"Test equipment",
+					"Line-of-Sight (LoS) and Non-Line-of-Sight (NLoS) data link modems",
 				],
 				image: "/products/radar-coms/identification-friend-or-foe.jpg",
 			},
@@ -340,55 +426,311 @@ export const products = [
 					"The Detect and Avoid Radar for remotely piloted aircraft systems (RPAS) facilitates a safe integration of unmanned systems into the non-segregated airspace.",
 					"As part of the European consortium Euroradar, HENSOLDT and its partner companies have developed the CAPTOR-E Radar. The Eurofighter will be equipped with this new generation of Active Electronic Scanned Array (AESA) radar system which will enhance the aircraft’s capabilities and survivability."
 				],
-				image: "/products/radar-coms/identification-friend-or-foe.jpg",
+				portfolioList: [
+					"Multimode, fire control nose radars for Eurofighter Typhoon",
+					"Airborne multi-mission surveillance radar for fixed-wing, helicopter, UAV",
+					"Anti-collision system for drones",
+				],
+				image: "/products/radar-coms/airborne-radars.jpg",
 			},
 			{
 				id: 4,
-				title: "Identification Friend or Foe (IFF) & Data Links",
-				slug: 'identification-friend-or-foe-and-data-links',
+				title: "Ground Based Radars",
+				slug: 'ground-based-radars',
 				subtitle: "",
 				descriptions: [
-					"The advanced Mode 5 IFF is the fundamental principle of positively identifying threats in real time, within war theatre or critical mission. Enhancing security through new cryptographic algorithms, Mode 5 IFF reduces friendly fire casualties and maximizes the combat effectiveness in the air, on land and at sea.",
-					"With five decades experience of designing, manufacturing, integrating and maintaining IFF equipment including military cryptographic computers, HENSOLDT is currently one of the major IFF Mode 5 technology and capability providers worldwide. Conceived with modular and sustainable design our IFF portfolio is certified with AIMS and NATO STANAG 4193 Ed.3, ensuring full interoperability across the US and NATO allies.",
-					"Today our IFF portfolio equip a whole range of different platform types in the world, covering all operational needs from airborne UAV, helicopters, fighters aircrafts, to ground-based fixed and air defence radar (including civil and military airport surveillance radar), up to complex naval vessels.",
-					"HENSOLDT datalink technology has been successfully used on multiple airborne platforms like Harfang, KZO, Mirage 2000, Airbus platforms, counting more than 50,000 flying hours. Our newest family of wide-band and narrow-band line-of-sight datalink solutions called Lygarion uses the most recent technology in order to enable the secure and real-time acquisition and exchange of operational data between multiple military platforms."
+					"The HENSOLDT radar family offers ground based air surveillance systems for short and medium-range air defence for the protection of ground forces.",
+					"The Spexer 2000 3D radar product family support military operations and protect simultaneous sea, land, and air-surveillance in fixed, deployable and mobile configurations. It represents high-performance surveillance including automatic detection, tracking and classification of ground-, sea and air targets. Spexer 2000 3D MkIII broadens the capabilities for air defense (Ground Based Air Defense (GBAD) / Very Short Range Air Defense (VSHORAD)).",
+					"The current product portfolio includes multifunction air surveillance and target acquisition radar systems using latest technology for rapid response and high precision.",
+					"COBRA (Counter Battery Radar) is a multifunction battlefield radar for the rapid location of hostile artillery positions as well as for the adjustment and registration of own artillery firings. The system has been developed in a tri-national programme (GE, FR, UK) by the Euro-Art Consortium.",
+					"The mobile systems TRML-3D and TRML-4D are used in surveillance missions and air defence missions supporting VSHORAD/SHORAD weapon systems. TRML-3D/ 32 has been in service since 2004 with different armed forces covering a number of military missions. The newly developed TRML-4D radar system uses the latest AESA radar technology allowing for fastest response time and high hit probability even in a complex environment with a high target density and involving highly agile and asymmetric threats.",
+					"An innovation and new milestone in radar development is the TwInvis passive radar. The system does not emit any signals itself, which means that it remains virtually invisible. Nevertheless it can even locate aircraft equipped with stealth technology."
 				],
-				image: "/products/radar-coms/identification-friend-or-foe.jpg",
+				portfolioList: [
+					"Air defence and weapon location radar",
+					"Passive radar for Ground Based Air Defence",
+					"Battlefield surveillance radar",
+				],
+				image: "/products/radar-coms/ground-based-radars.jpg",
 			},
 			{
 				id: 5,
-				title: "Identification Friend or Foe (IFF) & Data Links",
-				slug: 'identification-friend-or-foe-and-data-links',
+				title: "Security Radars",
+				slug: 'security-radars',
 				subtitle: "",
 				descriptions: [
-					"The advanced Mode 5 IFF is the fundamental principle of positively identifying threats in real time, within war theatre or critical mission. Enhancing security through new cryptographic algorithms, Mode 5 IFF reduces friendly fire casualties and maximizes the combat effectiveness in the air, on land and at sea.",
-					"With five decades experience of designing, manufacturing, integrating and maintaining IFF equipment including military cryptographic computers, HENSOLDT is currently one of the major IFF Mode 5 technology and capability providers worldwide. Conceived with modular and sustainable design our IFF portfolio is certified with AIMS and NATO STANAG 4193 Ed.3, ensuring full interoperability across the US and NATO allies.",
-					"Today our IFF portfolio equip a whole range of different platform types in the world, covering all operational needs from airborne UAV, helicopters, fighters aircrafts, to ground-based fixed and air defence radar (including civil and military airport surveillance radar), up to complex naval vessels.",
-					"HENSOLDT datalink technology has been successfully used on multiple airborne platforms like Harfang, KZO, Mirage 2000, Airbus platforms, counting more than 50,000 flying hours. Our newest family of wide-band and narrow-band line-of-sight datalink solutions called Lygarion uses the most recent technology in order to enable the secure and real-time acquisition and exchange of operational data between multiple military platforms."
+					"The SPEXER security radar family has been developed based on HENSOLDT’s long term experience with Active Electronically Scanned Array (AESA) technology and pulsed radar technology.",
+					"The SPEXER radar family offers high performance surveillance radars for different ranges for the automatic detection and classification of ground, sea and low-flying air targets.",
+					"It was developed for the specific requirements of security scenarios with its primary fields of application in border security systems, as well as the protection of high-value assets, critical infrastructure and perimeter."
 				],
-				image: "/products/radar-coms/identification-friend-or-foe.jpg",
+				portfolioList: [
+					"Perimeter, security, surface radars"
+				],
+				image: "/products/radar-coms/security-radars.jpg",
 			},
 			{
 				id: 6,
-				title: "Identification Friend or Foe (IFF) & Data Links",
-				slug: 'identification-friend-or-foe-and-data-links',
+				title: "Naval and Coastal Radars",
+				slug: 'naval-and-coastal-radars',
 				subtitle: "",
 				descriptions: [
-					"The advanced Mode 5 IFF is the fundamental principle of positively identifying threats in real time, within war theatre or critical mission. Enhancing security through new cryptographic algorithms, Mode 5 IFF reduces friendly fire casualties and maximizes the combat effectiveness in the air, on land and at sea.",
-					"With five decades experience of designing, manufacturing, integrating and maintaining IFF equipment including military cryptographic computers, HENSOLDT is currently one of the major IFF Mode 5 technology and capability providers worldwide. Conceived with modular and sustainable design our IFF portfolio is certified with AIMS and NATO STANAG 4193 Ed.3, ensuring full interoperability across the US and NATO allies.",
-					"Today our IFF portfolio equip a whole range of different platform types in the world, covering all operational needs from airborne UAV, helicopters, fighters aircrafts, to ground-based fixed and air defence radar (including civil and military airport surveillance radar), up to complex naval vessels.",
-					"HENSOLDT datalink technology has been successfully used on multiple airborne platforms like Harfang, KZO, Mirage 2000, Airbus platforms, counting more than 50,000 flying hours. Our newest family of wide-band and narrow-band line-of-sight datalink solutions called Lygarion uses the most recent technology in order to enable the secure and real-time acquisition and exchange of operational data between multiple military platforms."
+					"For almost three decades, HENSOLDT and its predecessor companies have served the Navies of the World with its TRS family of naval radars.",
+					"Starting with TRS-3D in the beginning of the 1990s, the multiple combat proven TRS naval radar system has continuously been improved over the years as technology evolved. The well-established TRS-3D also forms the basis for the ground-based TRML-3D. The latest naval radar portfolio extension was successfully realised with the modern TRS-4D AESA-radars, which are operational by many customers around the world. TRS-4D is available (in a Mark 1 configuration) as both rotating and non-rotating version. It is designed to meet current and future mission requirements.",
+					"HENSOLDT UK has been providing the world’s navies with navigation radars for over 70 years. With the patented Kelvin Hughes SharpEye Technology, HENSOLDT UK pioneered the use of coherent pulse Doppler solid state technology in a low weight sensor configuration in 2006, allowing the standard navigation radar to be used for multiple tasks at the same time.",
+					"All HENSOLDT UK's solid state radars contain SharpEye technology to deliver superior radar performance and reliability. SharpEye , the world’s first affordable navigation and surface search pulse Doppler radar sensor, offers high reliability, low cost of ownership and improved detection ranges, especially of small targets in clutter.",
 				],
-				image: "/products/radar-coms/identification-friend-or-foe.jpg",
+				portfolioList: [
+					"2D solid state pulse doppler navigation and surface search radar",
+					"3D series multi-mode surveillance and target acquisition radars",
+					"4D series fixed panel and rotator multi-function/ multi-mode surveillance and target acquisition radars",
+					"Navigation Radars (X- and S-Band)",
+					"Submarine Radar",
+					"Integrated Naval Bridge System (INBS)",
+					"Coastal Surveillance Radars",
+					"Vessel Traffic Services",
+					"Bridge System",
+				],
+				image: "/products/radar-coms/naval-and-coastal-radars.jpg",
+			},
+			{
+				id: 7,
+				title: "Commercial Shipping Solutions",
+				slug: 'commercial-shipping-solutions',
+				subtitle: "",
+				descriptions: [
+					"HENSOLDT UK has been supplier of navigation products and systems for over 70 years for commercial shipping as well as navies and coastguards.",
+					"The Kelvin Hughes SharpEye technology is installed in numerous types of vessel from small workboats up to cruise liners, container ships and tankers.",
+					"HENSOLDT UK bridge equipment and systems provide the navigators with the capability to navigate safety, allowing the operator to clearly see targets in all weather conditions.",
+					"All HENSOLDT UK technologies meet the latest IMO standards and international shipping requirements.",
+				],
+				portfolioList: [
+					"Navigation Radar System",
+					"Voyage Data Recorders",
+					"Electronic Chart Display and Information System (ECDIS)",
+				],
+				image: "/products/radar-coms/commercial-shipping-solutions.jpg",
+			},
+			,
+			{
+				id: 8,
+				title: "Space Radars",
+				slug: 'space-radars',
+				subtitle: "",
+				descriptions: [
+					"Space technology from HENSOLDT is regularly being used when looking down from space onto our home planet, producing extremely high-resolution radar images (one metre resolution). Thanks to radar, the images can be produced both by day and by night and even through clouds.",
+					"HENSOLDT supplies the essential assemblies of the radar electronics, as well as the transmit and receive modules for the antenna. Key components for the space radars from HENSOLDT have now been used flawlessly in space for more than two decades.",
+					"HENSOLDT components and subcomponents are in use on various programs for space missions, e.g. DLR’s two radar satellites TerraSAR-X and TanDEM-X, Spanish radar satellite PAZ, German Bundeswehr’s latest reconnaissance satellite SARah as well as the European meteorological satellite EUMETSAT (to be launched in 2021).",
+				],
+				portfolioList: [
+					"Space SAR radar electronics for advanced earth observation satellites"
+				],
+				equipmentList: [
+					
+				],
+				image: "/products/radar-coms/space-radars.jpg",
 			}
 		]
 	},
 	{
 		id: 4,
 		title: "Spectrum Dominance",
-		slug: 'spectrum',
-		subtitle: "Always one step ahead through information superiority",
+		slug: 'spectrum-dominance',
+		subtitle: "Dominating the information space",
 		image: "/home-products/spectrum-dominance.jpg",
+		subProducts: [
+			{
+				id: 1,
+				title: "Electronic Support / SIGINT",
+				slug: 'electronic-support-sigint',
+				subtitle: "Sensing of the electromagnetic spectrum",
+				image: "/products/spectrum-dominance/electronic-support-sigint.jpg",
+				descriptions: [
+					"Gaining strategic advantages thanks to ever more powerful sensors, the collection of data does not represent the greatest challenge today, but rather its meaningful processing and evaluation.",
+					"They detect communication and radar signals, identify the originators and create a comprehensive overview of the situation in real time.",
+				],
+				portfolioList: [
+					"Simultaneous COMINT and ELINT (SIGINT) integrated solution",
+					"Improved tactical knowledge of Modular 'SWaPC' optimized ELINT and COMINT solutions",
+					"Battlefield superiority",
+				],
+				equipments: [
+					{
+						title: "Airborne Electronic Support & SIGNINT",
+						list: [
+
+						]
+					},
+					{
+						title: "Land-based Electronic Support & SIGNINT",
+						list: [
+							
+						]
+					},
+					{
+						title: "Maritime Electronic Support & SIGNINT",
+						list: [
+							
+						]
+					}
+				]
+			},
+			{
+				id: 2,
+				title: "Receivers",
+				slug: 'receivers',
+				subtitle: "",
+				image: "/products/spectrum-dominance/identification-friend-or-foe.jpg",
+				descriptions: [
+					"Highly agile, modern radar systems use large frequency ranges and overlap with communication signals from defence and non-defence systems in the electromagnetic spectrum and in urban terrain. This significantly complicates the correct detection and localization of emitters.",
+					"In addition, there is not always sufficient prior knowledge about potential threats in the electromagnetic spectrum. These changed framework conditions require new answers. Answers only a broadband digital radar warner can provide.",
+					"Protecting the crews is a decisive factor when using ground vehicles and aircraft. For many years now, HENSOLDT has offered very modern and scalable solutions for this purpose, 1.e. for protection from guided missiles and laser-based weapons systems. These have already proven themselves in many missions of numerous forces.",
+				],
+				portfolioList: [
+					"Multi-channel wideband HF monitoring receiver",
+					"Digital wideband receiver",
+					"Wideband multirole monitoring receiver",
+				],
+				equipments: [
+					{
+						title: "Receivers",
+						list: [
+
+						]
+					},
+				]
+			},
+			{
+				id: 3,
+				title: "Direction Finders",
+				slug: 'direction-finders',
+				subtitle: "",
+				image: "/products/spectrum-dominance/direction-finders.png",
+				descriptions: [
+					"Direction Finders are used in land, sea and air applications to detect and locate transmission in the entire frequency range from 500 kHz to 9 GHz.",
+					"From small portable multirole models, to static deployed multi-client systems, our state-of-the-art DF’s address all customer requirements.",
+				],
+				portfolioList: [
+					"Detect and locate transmission in the entire frequency range from 500 kHz to 9 GHz",
+					"Small portable multirole models",
+					"Static deployed multi-client systems",
+				],
+				equipments: [
+					{
+						title: "Direction Finders",
+						list: [
+
+						]
+					},
+				]
+			},
+			{
+				id: 4,
+				title: "Electronic Attack / Jammers",
+				slug: 'electornic-attack-jammers',
+				subtitle: "Disrupt - Deny - Degrade - Deceive",
+				image: "/products/spectrum-dominance/electronic-attack-jammers.jpg",
+				descriptions: [
+					"Spectrum superiority and more advanced intelligence are the key elements needed to build an accurate situational awareness picture. The challenges of working in dense signal scenario (defence and non-defence) and new, yet known military hostile signals are a given. Protecting the forces is a decisive factor for Air, Sea and Land Forces.",
+					"For many years now, HENSOLDT has offered very modern and scalable solutions for this purpose, i.e. for protection from guided missiles and laser-based weapons systems."
+				],	
+				portfolioList: [
+					"Disrupt communication and radar signals on all available frequency bands",
+					"Jam enemy sensors and their communications",
+					"Jam and even interfere with signals which are used to remotely trigger explosive devices",
+					"Gaining Strategic advantage",
+				],
+				equipments: [
+					{
+						title: "Airborne Jammers",
+						list: [
+
+						]
+					},
+					{
+						title: "Land-based Jammers",
+						list: [
+
+						]
+					},
+				]
+			},
+			{
+				id: 5,
+				title: "Self-Protection",
+				slug: 'self-protection',
+				subtitle: "Protecting platforms & soldiers from enemy attacks by use of the electromagentic spectrum",
+				image: "/products/spectrum-dominance/self-protection.jpg",
+				descriptions: [
+					"For protecting platforms and its personell from existing and future threats, self protection has become a crucial factor in all domains.",
+					"This is applicable for especially high sophisticated and manned platforms.",
+					"Our modular and scalable self protection systems will support you in accomplishing any mission in a dense electromagnetic environment applicable for several platforms.",
+				],
+				portfolioList: [
+					"Advanced self protection systems for air, naval and ground based applications",
+					"Passive and active Self protection",
+					"Protection against Radio Controlled Improvised Explosive Devices (RCIED)",
+					"Customer tailored solutions",
+				],
+				equipments: [
+					"Airborne Self Protection",
+					"Land-based Self Protection",
+					"Maritime Self Protection"
+				]
+			},
+			{
+				id: 6,
+				title: "Electronic Warfare Software Suites & Ground Support Stations",
+				slug: 'electronic-walfare',
+				subtitle: "",
+				image: "/products/spectrum-dominance/electronic-walfare.jpg",
+				descriptions: [
+					"<strong>EW Software Suites</strong>",
+					"Nowadays software is becoming a crucial factor for Spectrum Dominance and Net Centric Warfare. Hensoldt is providing EW Software Suites for Air, Land and Naval applications combined in one solution covering COMINT, ELINT and ECM. Our Software ensures a fast and reliable signal scenario evaluation, automatic EOB generation, identification of unknown emitters as well as offline data analysis for strategic and tactical scenarios.",
+					"<strong>EW Ground Support Stations</strong>",
+					"The generation and verification of mission data is performed by specific EW Ground Support Stations. Those stations are used for generation, optimization and verification of pre-flight messages to secure and optimize EW Prime Equipment performance, realistic scenario tests for optimized threat awareness and countermeasures activities."
+				],
+				portfolioList: [
+					"EW Software Suites for air, land and naval applications combined in ONE solution covering COMINT, ELINT and ECM.",
+					"EW Ground Support Stations in used for optimization and verfication of Electronic Warfare Equipment performance, threat awareness and ECM activities."
+				],
+				equipments: [
+					{
+						title: "EW Software Suites & Ground Support Stations",
+						list: [
+
+						]
+					}
+				]
+			},
+			{
+				id: 7,
+				title: "Electronic Warfare Systems",
+				slug: 'electronic-walfare-systems',
+				subtitle: "",
+				image: "/products/spectrum-dominance/electronic-walfare-systems.jpg",
+				descriptions: [
+					"<strong>TEWS</strong>",
+					"The primary purpose of the Tactical Electronic Warfare system is to support the battlefield commander in tactical decision making through the collection of enemy communications information. The secondary purpose of the system is to supply intercepted information to the strategic domain for processing, validation, analysis and decision making. Collected transmission data consisting of intercepts with Audio and IF recordings and Direction Finding LOBs can be processed either at the local ESM station or at the central Operations Control Centre. This System is just for electronic warfare landbased applications.",
+					"<strong>MaSAMS</strong>",
+					"The Maritime Spectrum Awareness Management Suite combines the Key Features of active naval radar systems, passive radar systems, COMINT and ESM/ELINT systems, Electro Optical systems, Data Link systems and laser warning systems and ensures efficient correlation between all available sensors. Those Suites just for electronic warfare naval applications."
+				],
+				portfolioList: [
+					"Tactical and Strategical Electronic Warfare Systems",
+					"Land-based applications for Electronic Support / SIGINT , Electronic Attack and Self Protection",
+					"Maritime Spectrum Awareness Management Suite",
+					"Naval application for  Electronic Support / SIGINT, Electronic Attack and Self Protection, passive & active radar and EO systems",
+					"Integration of 3rd party equipment is possible"
+				],
+				equipments: [
+					{
+						title: "Electronic Warfare Systems",
+						list: [
+
+						]
+					}
+				]
+			}
+		]
 	},
 ];
 

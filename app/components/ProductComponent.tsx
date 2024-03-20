@@ -6,7 +6,7 @@ import GridContainer from "./GridContainer";
 const ProductComponent = (product: any) => {
 
   return (
-    <div className="bg-primary">
+    <div className="">
 			<div className="container mx-auto p-6 mb-5 relative z-20">
 				<div className="mb-2 md:mb-10 ml-2 lg:ml-32">
 					<h1 className="text-4xl lg:text-6xl mb-2 md:mb-10">{product.title}</h1>

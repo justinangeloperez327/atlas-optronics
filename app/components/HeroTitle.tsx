@@ -5,9 +5,7 @@ interface Props {
 
 const HeroTitle = ({ title }: Props) => {
 	return (
-		<p className="text-6xl font-bold tracking-tight text-slate-200 ">
-      {title}
-    </p>
+		<p className="text-6xl font-bold tracking-tight text-slate-100"><span className="drop-shadow-md">{title}</span></p>
 	);
 };
 

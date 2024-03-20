@@ -12,7 +12,7 @@ const ContactPage = () => {
 			<div className="flex flex-wrap justify-center lg:justify-between items-start space-y-8 lg:space-y-0 lg:space-x-8">
 				<div className="max-w-md w-full lg:w-1/2">
 					<div className="h-96"> </div>
-					<div className="bg-secondary p-4">
+					<div className="p-4">
 						<div className="text-lg font-semibold">Our Head Office</div>
 						<p className="text-slate-300">Atlas Optronics</p>
 						<p className="text-slate-300">8th Floor Sheikha Jameela Tower,</p>

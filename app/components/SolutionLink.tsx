@@ -20,7 +20,7 @@ const ImageWithTextOverlay = ({ href, imageSrc, alternative, text }: Props) => {
 					height={250}
 					className="w-full h-64 rounded-md"
 				/>
-				<span className="absolute top-7 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-opacity-75 text-white text-xl p-2 drop-shadow-lg">
+				<span className="absolute top-7 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-opacity-75  text-xl p-2 drop-shadow-lg">
 					{text}
 				</span>
 			</a>
