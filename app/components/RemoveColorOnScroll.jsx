@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useRef, useState } from "react";
 
-const RemoveColorOnScroll = ({ children }: any) => {
+const RemoveColorOnScroll = ({ children }) => {
     const [isVisible, setIsVisible] = useState(true);
     const ref = useRef(null);
 

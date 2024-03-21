@@ -39,7 +39,7 @@ const SolutionsSection = () => {
 			<div className="container mx-auto p-2 md:py-8 md:px-12">
 				<div className=" p-5 mb-4">
 					<p className="text-6xl font-bold tracking-tight text-slate-500 drop-shadow-md">
-						<span className="">Explore Our Solutions</span>
+						<span className="">Our Solutions</span>
 					</p>
 					<p className="mt-4 text-lg leading-8 text-slate-500 mb-4">
 						Where Vision Meets Security.

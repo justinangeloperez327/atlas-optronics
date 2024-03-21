@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useRef, useState } from "react";
 
-const RevealOnScroll = ({ children }: any) => {
+const RevealOnScroll = ({ children }) => {
     const [isVisible, setIsVisible] = useState(false);
     const ref = useRef(null);
   
